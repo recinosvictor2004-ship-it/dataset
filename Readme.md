@@ -124,9 +124,9 @@ Instrucción final:
 Genera 25 registros nuevos, válidos, variados y sin repetir nombres.
 
 # 📬 Contacto
-Email: tuemail@ejemplo.com
+Email: recinosvictor2004@gmail.com
 
-GitHub: https:
+GitHub: https: recinosvictor2004-ship-i
 
 LinkedIn: https:
 
