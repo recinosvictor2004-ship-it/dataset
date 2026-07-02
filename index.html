@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYM CRUD — Brutal Edition</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <h1 class="logo">GYM<span>CRUD</span></h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Buscar cliente...">
+    <select id="filtro">
+      <option value="Todos">Todos</option>
+      <option value="Básica">Básica</option>
+      <option value="Premium">Premium</option>
+      <option value="Elite">Elite</option>
+    </select>
+  </div>
+</header>
+
+<section class="form-section">
+  <h2>Agregar Cliente</h2>
+  <form id="form">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="number" id="edad" placeholder="Edad" required>
+    <select id="membresia">
+      <option value="Básica">Básica</option>
+      <option value="Premium">Premium</option>
+      <option value="Elite">Elite</option>
+    </select>
+    <input type="number" id="peso" placeholder="Peso (kg)" required>
+    <input type="text" id="objetivo" placeholder="Objetivo">
+    <button class="btn neon-btn" type="submit">Agregar</button>
+  </form>
+</section>
+
+<main id="cards" class="cards"></main>
+
+<section class="grafico">
+  <h2>Clientes por membresía</h2>
+  <canvas id="chart"></canvas>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+:root {
+  --bg: #0a0a0f;
+  --card: #14141b;
+  --neon-blue: #00eaff;
+  --neon-pink: #ff0077;
+  --neon-purple: #9b4dff;
+  --text: #e5e5e5;
+  --text-muted: #9ca3af;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0f0f1a 0%, #000 70%);
+  color: var(--text);
+}
+
+/* Header */
+.header {
+  padding: 1.5rem;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--neon-blue);
+  box-shadow: 0 0 25px rgba(0, 234, 255, 0.3);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--neon-pink);
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.controls input,
+.controls select {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--neon-purple);
+  background: #0f0f1a;
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.controls input:focus,
+.controls select:focus {
+  box-shadow: 0 0 15px var(--neon-purple);
+}
+
+/* Formulario */
+.form-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-section h2 {
+  color: var(--neon-pink);
+  margin-bottom: 1rem;
+}
+
+#form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#form input,
+#form select {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 2px solid var(--neon-blue);
+  background: #0f0f1a;
+  color: var(--text);
+  width: 200px;
+}
+
+.neon-btn {
+  padding: 0.8rem 1.5rem;
+  background: var(--neon-pink);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.neon-btn:hover {
+  box-shadow: 0 0 20px var(--neon-pink);
+  transform: translateY(-3px);
+}
+
+/* Cards */
+.cards {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid var(--neon-blue);
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(255, 0, 119, 0.4);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--neon-blue);
+}
+
+.card p {
+  margin: 0.4rem 0;
+  color: var(--text-muted);
+}
+
+/* Botón eliminar */
+.delete-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--neon-pink);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.delete-btn:hover {
+  box-shadow: 0 0 20px var(--neon-pink);
+  transform: translateY(-3px);
+}
+
+/* Chart */
+.grafico {
+  padding: 2rem;
+  text-align: center;
+}
+
+.grafico h2 {
+  color: var(--neon-pink);
+  margin-bottom: 1rem;
+}
